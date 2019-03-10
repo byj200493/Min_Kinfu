@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{10CC34AF-C17A-446B-8B77-9604A4865E4A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Min_Kinfu</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\bin</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Eigen\include;C:\Program Files\flann\include;C:\Program Files\qhull\include;C:\Program Files\OpenNI2\Include;C:\Program Files\Boost\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;C:\Program Files\VTK 5.8.0\include\vtk-5.8;E:\Work\Min_Kinfu\trunk\geometry\include;E:\Work\Min_Kinfu\trunk\common\include;E:\Work\Min_Kinfu\trunk\gpu\kinfu\include;E:\Work\Min_Kinfu\include;E:\Work\Min_Kinfu\trunk\gpu\containers\include;E:\Work\Min_Kinfu\trunk\visualization\include;E:\Work\Min_Kinfu\trunk\search\include;E:\Work\Min_Kinfu\trunk\io\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Eigen\include;C:\Program Files\flann\include;C:\Program Files\qhull\include;C:\Program Files\OpenNI2\Include;C:\Program Files\Boost\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;C:\Program Files\VTK 5.8.0\include\vtk-5.8;E:\Work\Min_Kinfu\trunk\geometry\include;E:\Work\Min_Kinfu\trunk\common\include;E:\Work\Min_Kinfu\trunk\gpu\kinfu\include;E:\Work\Min_Kinfu\include;E:\Work\Min_Kinfu\trunk\gpu\containers\include;E:\Work\Min_Kinfu\trunk\visualization\include;E:\Work\Min_Kinfu\trunk\search\include;E:\Work\Min_Kinfu\trunk\io\include;E:\Work\Min_Kinfu\trunk\gpu\kinfu\tools;E:\Work\Min_Kinfu\trunk\features\include;E:\Work\Min_Kinfu\trunk\kdtree\include;E:\Work\Min_Kinfu\trunk\octree\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>E:\Work\Min_Kinfu\lib;C:\Program Files\Boost\lib;C:\Program Files\VTK 5.8.0\lib;C:\Program Files\OpenNI2\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\Boost\lib\libboost_system-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_filesystem-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_thread-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_date_time-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_iostreams-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_chrono-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_regex-vc100-mt-1_50.lib;C:\Program Files\OpenNI\Lib64\openNI64.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkGenericFiltering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkGeovis.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkproj4.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkCharts.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkViews.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkInfovis.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkWidgets.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkVolumeRendering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkHybrid.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkRendering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkImaging.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkGraphics.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkverdict.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkIO.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkFiltering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkCommon.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkDICOMParser.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkNetCDF_cxx.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkmetaio.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtksys.lib;E:\Work\Min_Kinfu\lib\pcl_visualization_debug.lib;E:\Work\Min_Kinfu\lib\pcl_gpu_kinfu_debug.lib;E:\Work\Min_Kinfu\lib\pcl_io_debug.lib;E:\Work\Min_Kinfu\lib\pcl_io_ply_debug.lib;E:\Work\Min_Kinfu\lib\pcl_common_debug.lib;E:\Work\Min_Kinfu\lib\pcl_gpu_containers_debug.lib</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\Eigen\include;C:\Program Files\flann\include;C:\Program Files\qhull\include;C:\Program Files\OpenNI2\Include;C:\Program Files\Boost\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include;C:\Program Files\VTK 5.8.0\include\vtk-5.8;..\trunk\geometry\include;..\trunk\common\include;..\trunk\gpu\kinfu\include;..\include;..\trunk\gpu\containers\include;..\trunk\visualization\include;..\trunk\search\include;..\trunk\io\include;..\trunk\gpu\kinfu\tools;..\trunk\features\include;..\trunk\kdtree\include;..\trunk\octree\include;E:\Min_Kinfu\include\opencv;..\trunk\surface\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Program Files\Boost\lib;C:\Program Files\OpenNI2\Lib;C:\Program Files\flann\lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8;..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>C:\Program Files\Boost\lib\libboost_thread-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_date_time-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_iostreams-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_chrono-vc100-mt-1_50.lib;C:\Program Files\Boost\lib\libboost_regex-vc100-mt-1_50.lib;C:\Program Files\OpenNI2\Lib\OpenNI2.lib;OpenNI2.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkGenericFiltering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkGeovis.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkproj4.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkCharts.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkViews.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkInfovis.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkWidgets.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkVolumeRendering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkHybrid.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkRendering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkImaging.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkGraphics.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkverdict.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkIO.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkFiltering.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkCommon.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkDICOMParser.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkNetCDF_cxx.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkmetaio.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtksys.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtksqlite.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkpng.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtktiff.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkjpeg.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkexpat.lib;vfw32.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkexoIIc.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkNetCDF.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtklibxml2.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkzlib.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkalglib.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkftgl.lib;C:\Program Files\VTK 5.8.0\lib\vtk-5.8\vtkfreetype.lib;C:\Qt\4.8.0\lib\QtGui4.lib;C:\Qt\4.8.0\lib\QtSql4.lib;C:\Qt\4.8.0\lib\QtCore4.lib;delayimp.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64\cudart_static.lib;glu32.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="holeFix.h" />
+    <ClInclude Include="Simplify.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="texture_api.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="holeFix.cpp" />
+    <ClCompile Include="Min_Kinfu.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
